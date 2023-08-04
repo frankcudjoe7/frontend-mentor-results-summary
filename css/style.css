@@ -1,5 +1,5 @@
 :root {
-    --color-upper-score: #555;
+    --color-upper-score: #333;
 }
 
 *,
@@ -119,7 +119,8 @@ body {
 
 .upper-score {
     color: var(--color-upper-score);
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
 
 .btn {
