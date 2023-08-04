@@ -1,0 +1,129 @@
+:root {
+    --color-upper-score: ;
+    --color-lower-score: ;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Hanken Grotesk', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+.page {
+    margin: 0;
+}
+
+
+.result {
+    display: flex;
+    flex-direction: column;
+}
+    
+
+.result__main {
+    text-align: center;
+    color: #efefef;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 2em 3em;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .result {
+        flex-direction: row;
+        max-width: 600px;
+        margin: 0 auto;
+        box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .result__main,
+    .result__summary {
+        width: 50%;
+    }
+
+    .result__main {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .page {
+        padding: 5em;
+    }
+}
+
+.result__main__score,
+.result__main__subtext {
+    margin: 1em auto;
+}
+
+.result__main__score {
+    padding: 5rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.result__main__score h1 {
+    font-size: 7rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.result__main__subtext {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.result__summary {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.summary__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.result__summary__parameter {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    background-color: #efefef;
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 0.6em;
+}
+
+.parameter__name {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 1em 2em;
+    border-radius: 30px;
+    background-color: #555;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
