@@ -1,6 +1,5 @@
 :root {
-    --color-upper-score: ;
-    --color-lower-score: ;
+    --color-upper-score: #555;
 }
 
 *,
@@ -109,20 +108,25 @@ body {
     margin-bottom: 0.6em;
 }
 
+.icon {
+    margin-right: 10px;
+}
+
 .parameter__name {
     display: flex;
     flex-direction: row;
 }
 
-.icon {
-    margin-right: 10px;
+.upper-score {
+    color: var(--color-upper-score);
+    font-size: 2rem;
 }
 
 .btn {
     text-decoration: none;
     padding: 1em 2em;
     border-radius: 30px;
-    background-color: #555;
+    background-color: var(--color-upper-score);
     width: 100%;
     text-align: center;
     color: #fff;
