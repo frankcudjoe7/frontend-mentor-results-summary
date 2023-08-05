@@ -28,7 +28,6 @@ body {
     flex-direction: column;
 }
     
-
 .result__main {
     text-align: center;
     color: #efefef;
@@ -39,11 +38,17 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+    .page {
+        padding: 5em;
+    }
+
     .result {
         flex-direction: row;
         max-width: 600px;
         margin: 0 auto;
         box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.2);
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
     }
 
     .result__main,
@@ -54,10 +59,6 @@ body {
     .result__main {
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
-    }
-
-    .page {
-        padding: 5em;
     }
 }
 
